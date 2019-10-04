@@ -14,7 +14,7 @@
 let ten = prompt("ban te la: ");
 let namsinh = Number(prompt("nam sinh cua ban: "));
 let tuoi = 2019 - namsinh;
-console.log(`xin chao: ${ten} ,ban ${tuoi} tuoi` );;
+console.log(`xin chao: ${ten} ,ban ${tuoi} tuoi` );
 
 
 
