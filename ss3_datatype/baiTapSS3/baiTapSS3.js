@@ -24,22 +24,23 @@
 
 
 
-
 //---bai 4
-// let soTien = parseInt(prompt("nhap so tien(so tien phai la boi cua 10.000): "));
-// if (soTien % 10000 !== 0){
-//     console.log("So tien k hop le");
+let soTien = parseInt(prompt("nhap so tien(so tien phai la boi cua 10.000): "));
+if (soTien % 10000 === 0){
     
-// }
-// let a1 = parseInt(soTien / 100000); 
-// let a2 = parseInt(soTien % 100000);
-// let b1 = parseInt(a2 / 50000);
-// let b2 = parseInt(a2 % 50000);
-// let c1 = parseInt(b2 / 20000);
-// let c2 = parseInt(b2 % 20000);
-// let d1 = parseInt(c2 / 10000);
+    let a1 = parseInt(soTien / 100000); 
+    let a2 = parseInt(soTien % 100000);
+    let b1 = parseInt(a2 / 50000);
+    let b2 = parseInt(a2 % 50000);
+    let c1 = parseInt(b2 / 20000);
+    let c2 = parseInt(b2 % 20000);
+    let d1 = parseInt(c2 / 10000);
 
-// console.log(`${soTien} vnđ = ${a1} tờ 100.000 + ${b1} tờ 50.000 + ${c1} tờ 20.000 + ${d1} tờ 10.000 vnđ`);
+    console.log(`${soTien} vnđ = ${a1} tờ 100.000 + ${b1} tờ 50.000 + ${c1} tờ 20.000 + ${d1} tờ 10.000 vnđ`);
+}
+else{
+    console.log("So tien khong hop le !");
+}
 
 
 //---bai 5

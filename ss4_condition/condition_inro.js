@@ -42,15 +42,25 @@
 
 //---nhap vao thang trong nam in ra so ngay cua thang (thang 2 co the co 28 hoac 29 ngay)
 let thang = Number(prompt("thang: "));
-if(thang === 2){
-    console.log(`Tháng 2 có 28 hoặc 29 ngày`);
-    
-}
-else if (thang === 1 || thang === 3 || thang === 5 || thang === 7 || thang === 8 || thang === 10 || thang === 12){
-    console.log(`Tháng ${thang} có 31 ngày`);
-    
-}
-else if (thang === 4 || thang === 6 || thang === 9 || thang === 11){
-    console.log(`Tháng ${thang} có 30 ngày`);
+switch(thang){
+    case 2:
+        console.log(`Tháng 2 có 28 hoặc 29 ngày`);
+        break;
+    case 1:
+        case 3:
+            case 5:
+                case 7:
+                    case 8:
+                        case 10:
+                            case 12:
+                                console.log(`Tháng ${thang} có 31 ngày`);
+                                break;
+    case 2:
+        case 4:
+            case 6:
+                case 9:
+                    case 11:
+                            console.log(`Tháng ${thang} có 30 ngày`);
+                            break;
     
 }
