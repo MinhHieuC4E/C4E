@@ -22,14 +22,12 @@
 // console.log(`tong cua day so S = ${tong}`);
 
 
-//---ve hinh chu nhat
-let chieuDai = prompt("nhap chieu dai: ");
+//---ve hinh
+let chieuCao = prompt("nhap chieu dai: ");
 let chieuRong = prompt("nhap chieu rong: ");
-for (let a = 1; a <= chieuDai; a++) {
-    
+for (let a = 1; a <= chieuCao; a++) {
     for (let b = 1; b <= chieuRong; b++) {
-        document.write("*");
+        document.write("*");// in tren html
     }
-    document.write("\n");
+    document.write('<br/>');// xuong dong tren html
 }
-

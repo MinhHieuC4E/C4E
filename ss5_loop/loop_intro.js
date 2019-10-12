@@ -40,16 +40,40 @@
 //---kiem tra mat khau
 
 // let matKhau = prompt("nhap mat khau: ");
-// let kt = matKhau.length;
-// let a = matKhau.indexOf("@");
-// let b = matKhau.indexOf(".");
-// let c = matKhau.indexOf("#");
-// while ((kt < 8 ) || (a === -1 && b === -1 && c === -1)) {
+// while ((matKhau.length < 8 ) || 
+// ((matKhau.indexOf("@") === -1 
+// && matKhau.indexOf("#") === -1
+// && matKhau.indexOf(".") === -1))) {
 //     matKhau = prompt("Mat khau phai tu 8 ky tu tro len \n va chua ky tu \" @ \" , \" . \" , \" # \" !!! : ");
-//     kt = matKhau.length;
-//     a = matKhau.indexOf("@");
-//     b = matKhau.indexOf(".");
-//     c = matKhau.indexOf("#");
 // }
 // console.log(`Mat khau: ${matKhau}`);
 
+
+
+//----
+// for (let i = 0; i < 100; i++) {
+//     if (i % 2 === 1 ) {
+//         break;
+//     }
+//     console.log(i);
+    
+// }
+
+
+
+//---kiem tra so nguyen to
+let isSNT = true;
+let n = prompt("nhap so: ");
+for (let i = 2; i < n ; i++) {
+    if (n % i === 0){
+        isSNT = false;
+        break; // su dung break toi uu lenh
+    }
+}
+if (isSNT) {
+    console.log(`${n} la so nguyen to`);
+}
+else {
+    console.log(`${n} khong la so nguyen to`);
+    
+}
